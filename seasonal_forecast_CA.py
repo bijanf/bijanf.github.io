@@ -17,13 +17,13 @@ import cartopy.feature as cf
 os.system("rm download.grib")
 # extract the dates
 
-currentMonth = datetime.now().month
-if currentMonth < 10:
-    currentMonth ="0"+str(currentMonth)
-else:
-    currentMonth =str(currentMonth)
+#currentMonth = datetime.now().month
+#if currentMonth < 10:
+#    currentMonth ="0"+str(currentMonth)
+#else:
+#    currentMonth =str(currentMonth)
 currentYear = datetime.now().year
-
+currentMonth ="02"
 # download the new data
 c = cdsapi.Client()
 c.retrieve(
